@@ -205,6 +205,7 @@ main {
 .play-instant-container {
     display: flex;
     align-items: center;
+    margin: 120px 0px;
 }
 
 .play-instant-image-container img {
@@ -218,7 +219,16 @@ main {
 
 }
 
-.play-instant-title {}
+.play-instant-image-container {
+    position: relative;
+}
+
+.mini-image {
+    width: 55%;
+    position: absolute;
+    bottom: -100px;
+    left: 250px;
+}
 
 /* responsive design for mobile devices */
 /* @media screen and (max-width: 576px) {
