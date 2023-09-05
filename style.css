@@ -25,6 +25,30 @@ nav {
 
 }
 
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 86px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 20px;
+
+}
+
+.nav-logo p {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.nav-logo .nav-title {
+    color: #FF42A5;
+
+}
+
 .nav-item>ul {
     display: flex;
     align-items: center;
@@ -131,3 +155,59 @@ nav li a,
 .banner-image img {
     width: 80%;
 }
+
+/* header section style end */
+/* main section style start */
+
+.online-game-container {
+    margin: 120px auto;
+    max-width: 1440px;
+
+}
+
+.online-game-content {
+    text-align: center;
+}
+
+.online-game-title {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.funny-text {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 24px;
+}
+
+.online-game-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card-description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #534C64;
+}
+
+/* responsive design for mobile devices */
+/* @media screen and (max-width: 576px) {
+
+    nav,
+    .nav-item>ul {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .nav-item li {
+        margin-top: 20px;
+
+
+    }
+
+} */
