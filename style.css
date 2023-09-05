@@ -9,11 +9,17 @@
 
 }
 
+body {
+    padding: 0;
+    margin: 0;
+}
+
 /* shared style */
 .general-text {
     color: #534C64;
     font-size: 1.2rem;
     font-weight: 500;
+
 }
 
 .section-title {
@@ -111,16 +117,14 @@ nav li a,
 /* banner style */
 
 .banner-container {
-    max-width: 1440;
+    max-width: 1440px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 }
 
-.banner-content {
-    width: 50%;
-    text-align: center;
-}
+
 
 .banner-content .banner-title {
     color: #0B0223;
@@ -144,6 +148,13 @@ nav li a,
     margin-bottom: 24px;
 }
 
+.banner-content .fa-solid {
+    padding-right: 10px;
+}
+
+.banner-content .fa-regular {
+    padding-right: 10px;
+}
 
 
 .banner-btn {
@@ -169,23 +180,24 @@ nav li a,
 }
 
 .banner-image img {
-    width: 80%;
+    width: 100%;
 }
 
 /* header section style end */
+
 /* main section style start */
+
+/* onlie game style */
 
 
 .online-game-container {
     max-width: 1440px;
     margin: 120px auto;
-
 }
 
 .online-game-content {
     text-align: center;
 }
-
 
 .online-game-card-container {
     display: grid;
@@ -228,9 +240,11 @@ nav li a,
     left: 250px;
 }
 
-
+/* game category style */
 article {
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+    max-width: 1440px;
+    margin: 0 auto;
 
 }
 
@@ -238,8 +252,8 @@ article {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 25px;
-    max-width: 1440px;
-    margin: 0 auto;
+
+
     padding: 120px 0px;
 
 }
@@ -269,10 +283,10 @@ article {
     margin-left: 0;
 }
 
+/* footer style */
 footer {
     margin: 0px auto;
     background: #0B0223;
-
 }
 
 .footer-logo {
@@ -288,7 +302,6 @@ footer {
     height: 40px;
     object-fit: cover;
     margin-right: 20px;
-
 }
 
 .footer-logo p {
@@ -360,18 +373,60 @@ footer .policy-section li a {
 }
 
 /* responsive design for mobile devices */
-/* @media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
 
-    nav,
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
     .nav-item>ul {
         flex-direction: column;
-        margin-top: 50px;
     }
 
     .nav-item li {
-        margin-top: 20px;
-
-
+        margin-top: 30px;
     }
 
-} */
+    .nav-btn {
+        width: 110%;
+        margin-top: 30px;
+    }
+
+    .nav-btn .fa-youtube {
+        margin-left: 8px;
+    }
+
+    .nav-btn .fa-tiktok {
+        margin-left: 8px;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .online-game-card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        margin-left: 20px;
+    }
+
+    .card img {
+        margin-bottom: 20px;
+    }
+
+    .game-category-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 0px 0px;
+    }
+
+    .footer-nav>ul {
+        flex-direction: row;
+    }
+
+
+}
