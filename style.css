@@ -259,7 +259,7 @@ article {
 
 .game-category:hover {
     border: 1px solid #FF42A5;
-    border-radius: 50%;
+    border-radius: 50px;
 }
 
 .name {
@@ -270,14 +270,17 @@ article {
 }
 
 footer {
-    margin: 120px auto;
-    /* background: #0B0223; */
+    margin: 120px auto 0px;
+    background: #0B0223;
+
 }
 
 .footer-logo {
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 66px;
 }
 
 .footer-logo img {
@@ -302,33 +305,59 @@ footer {
 
 .footer-nav>ul {
     display: flex;
-
     justify-content: center;
 }
 
 .footer-nav li {
     margin-right: 60px;
     list-style: none;
-    /* color: #FFF; */
     font-size: 1rem;
     font-weight: 600;
-
 }
 
 .footer-nav li a {
     text-decoration: none;
+    color: #FFF;
 }
 
 .social-icon {
     text-align: center;
     font-size: 2.2rem;
-    margin: 66px
+    margin: 50px
 }
 
 .social-icon .fa-brands {
     margin-right: 40px;
+    color: #fff;
 }
 
+.social-icon .fa-facebook {
+    color: #1877F2;
+
+}
+
+.social-icon .fa-youtube {
+    color: #F61C0D;
+}
+
+.policy-section {
+    margin-bottom: 25px;
+}
+
+footer .policy-section li a {
+    color: #ffffff99;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.copyright {
+    color: #ffffff99;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 130px;
+}
 
 /* responsive design for mobile devices */
 /* @media screen and (max-width: 576px) {
